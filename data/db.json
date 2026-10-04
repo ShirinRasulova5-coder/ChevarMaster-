@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "id": "tailor-1",
+      "role": "tikuvchi",
+      "firstName": "Mohira",
+      "lastName": "Usmonova",
+      "phone": "+998 90 123 45 67",
+      "salonName": "Atelier Mohira Couture",
+      "specialty": "Ayollar oqshom va kelin liboslari",
+      "createdAt": "2026-03-01T10:00:00.000Z"
+    },
+    {
+      "id": "tailor-2",
+      "role": "tikuvchi",
+      "firstName": "Dilfuza",
+      "lastName": "Karimova",
+      "phone": "+998 93 987 65 43",
+      "salonName": "Zar Bof Milliy Liboslar",
+      "specialty": "Xonatlas, adras va zamonaviy milliy liboslar",
+      "createdAt": "2026-03-02T11:00:00.000Z"
+    },
+    {
+      "id": "customer-1",
+      "role": "mijoz",
+      "firstName": "Zuhra",
+      "lastName": "Aliyeva",
+      "email": "zuhra@example.com",
+      "password": "password123",
+      "createdAt": "2026-03-05T09:00:00.000Z"
+    },
+    {
+      "id": "tailor-1791132394823",
+      "role": "tikuvchi",
+      "firstName": "marjona",
+      "lastName": "riqsiyeva",
+      "phone": "1234567890",
+      "salonName": "marjona Atelier",
+      "specialty": "Professional liboslar dizayni",
+      "createdAt": "2026-10-04T16:46:34.823Z"
+    }
+  ],
+  "sketches": [
+    {
+      "id": "sketch-1",
+      "title": "Zamonaviy Qat-qat Oqshom Libosi",
+      "tailorId": "tailor-1",
+      "tailorName": "Mohira Usmonova",
+      "modelType": "female",
+      "dressCategory": "oqshom_libosi",
+      "notes": "Korsetli yuqori qism, bir yelkali draperiya va 3 qavatli shifon volanlar.",
+      "fabricSuggestion": "Shifon, ipak shoyi va yengil organza. Taxminan 4.5 metr.",
+      "createdAt": "2026-03-10T14:30:00.000Z"
+    },
+    {
+      "id": "sketch-2",
+      "title": "Adras Chopon va A-siluet Libos",
+      "tailorId": "tailor-2",
+      "tailorName": "Dilfuza Karimova",
+      "modelType": "female",
+      "dressCategory": "milliy_libos",
+      "notes": "Tabiiy ipak adras matosidan zamonaviy bichimli chopon va to'g'ri ko'ylak.",
+      "fabricSuggestion": "Marg'ilon adrasi 3.5 metr, to'qima ipak astar 2 metr.",
+      "createdAt": "2026-03-12T16:00:00.000Z"
+    }
+  ],
+  "measurements": [
+    {
+      "id": "meas-1",
+      "clientName": "Zuhra Aliyeva",
+      "clientPhone": "+998 97 765 43 21",
+      "dressType": "Oqshom libosi",
+      "height": 168,
+      "bust": 92,
+      "waist": 70,
+      "hips": 98,
+      "shoulder": 38,
+      "sleeveLength": 58,
+      "dressLength": 145,
+      "neck": 36,
+      "wrist": 16,
+      "notes": "Bel qismi qadalganda 2 sm erkinlik qoldirilsin.",
+      "tailorId": "tailor-1",
+      "createdAt": "2026-03-15T12:00:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-1",
+      "orderNumber": "CM-2026-001",
+      "customerId": "customer-1",
+      "customerName": "Zuhra Aliyeva",
+      "customerPhone": "+998 97 765 43 21",
+      "customerEmail": "zuhra@example.com",
+      "tailorId": "tailor-1",
+      "tailorName": "Mohira Usmonova",
+      "dressType": "Oqshom Libosi",
+      "fabricChoice": "Zumrad rangli baxmal va to'r",
+      "colorPreference": "To'q zumrad yashil (#097969)",
+      "notes": "Bitiruv oqshomi uchun hashamatli libos. Orqasi maxfiy qisqichli va engil shleyfli.",
+      "status": "tikilmoqda",
+      "measurements": {
+        "height": 168,
+        "bust": 92,
+        "waist": 70,
+        "hips": 98,
+        "sleeveLength": 58,
+        "dressLength": 145
+      },
+      "priceEstimate": 850000,
+      "deliveryDate": "2026-04-10",
+      "messages": [
+        {
+          "senderRole": "mijoz",
+          "senderName": "Zuhra Aliyeva",
+          "text": "Assalomu alaykum, matoni olib kelsam bo'ladimi?",
+          "timestamp": "2026-03-16T10:00:00.000Z"
+        },
+        {
+          "senderRole": "tikuvchi",
+          "senderName": "Mohira Usmonova",
+          "text": "Va alaykum assalom! Ha albatta, ertaga soat 14:00 da o'lchov olish uchun kelsangiz bo'ladi.",
+          "timestamp": "2026-03-16T11:20:00.000Z"
+        }
+      ],
+      "createdAt": "2026-03-15T10:00:00.000Z",
+      "updatedAt": "2026-03-18T14:00:00.000Z"
+    }
+  ]
+}
